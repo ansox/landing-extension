@@ -20,7 +20,7 @@ const Grow: NextPage = () => {
   }, [])
 
   return (
-    <div className="h-screen bg-[#f5f4e0]">
+    <div className="min-h-screen bg-[#f5f4e0]">
       <header className='p-4'>
         <NextLink href="/care">
           <button className='bg-white rounded-full p-3 pb-2 shadow	' >
