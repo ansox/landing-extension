@@ -1,10 +1,20 @@
+import React from "react";
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router';
 import btnBack from '../public/bt_voltar.svg';
 import image from '../public/grow.gif';
 
 const Grow: NextPage = () => {
+  const router = useRouter();
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      router.push('/harvest')
+    }, 12000)
+  }, [])
+
   return (
     <div className="h-screen bg-[#f3f2d9]">
       <header className='p-4'>
