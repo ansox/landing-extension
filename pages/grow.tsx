@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import btnBack from '../public/bt_voltar.svg';
-import image from '../public/tela2_1.png';
+import image from '../public/grow.gif';
 
 const Grow: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Grow: NextPage = () => {
           </button>
         </NextLink>
       </header>
-      <div className="w-100 mt-14 flex flex-col justify-center items-center gap-20">
+      <div className="w-100 mt-14 flex flex-col justify-center items-center gap-14">
         <h1 className='text-6xl text-center'>ESPERE CRESCER...</h1>
         <NextLink href="/harvest">
           <Image src={image} alt="image 1"/>
