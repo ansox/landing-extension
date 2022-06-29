@@ -6,10 +6,10 @@ import image from '../public/grow.gif';
 
 const Grow: NextPage = () => {
   return (
-    <>
-      <header className='m-4'>
+    <div className="h-screen bg-[#f3f2d9]">
+      <header className='p-4'>
         <NextLink href="/care">
-          <button className='rounded-full p-3 pb-2 shadow	' >
+          <button className='bg-white rounded-full p-3 pb-2 shadow	' >
             <Image width={20} height={20} src={btnBack} alt="botão voltar"/>
           </button>
         </NextLink>
@@ -20,7 +20,7 @@ const Grow: NextPage = () => {
           <Image src={image} alt="image 1"/>
         </NextLink>
       </div>
-    </>
+    </div>
   )
 }
 
