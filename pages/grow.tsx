@@ -10,9 +10,13 @@ const Grow: NextPage = () => {
   const router = useRouter();
 
   React.useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       router.push('/harvest')
     }, 12000)
+
+    return () => {
+      clearTimeout(timer);
+    }
   }, [])
 
   return (
